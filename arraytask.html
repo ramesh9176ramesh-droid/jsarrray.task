@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let word="roor";
+        let reverse=word.split("").reverse().join("");
+
+        if(word===reverse){
+        console.log("palindrome");
+        }
+        else{
+        console.log("not palindrome");
+        }
+
+        let java1="NIGHT";
+        let java2="THING";
+
+        let a=java1.split("").sort().join("");
+        let b=java2.split("").sort().join("");
+
+        if(a===b){
+        console.log("anagarm");
+        }
+        else{
+        console.log("not anagram");
+        }
+
+        let name="Ramesh";
+        let js=name.split("").reverse().join("");
+        console.log(js);
+         
+        let num=7;
+        let count=0;
+
+        for(let i=0;i<=num;i++){
+            if(num %i ===0){
+                count++;
+            }
+        }
+        if(count===2){
+            console.log("prime number");
+        }
+        else{
+            console.log("not prime number");
+        }
+         
+
+        let d=10
+        let e=20
+        
+        d=20;
+        e=10;
+        console.log(d);
+        console.log(e);
+
+
+        let fruits=["orange","mango","banana"];
+        for(let i=0;i < fruits.length;i++){
+            console.log(fruits[i])
+        };
+
+        //break
+        for(let i=1;i<=100;i++){
+            console.log(i);
+        if(i===100){
+        }
+        };
+
+        //continue
+        for(let i=1;i<=10;i++){
+            if(i==5){
+            continue;
+            }
+            console.log(i)
+        };
+         
+        let courses = ["bca", "mca", "cs", "engineering"];
+        let name1="mca"
+        if (courses.includes(name1)) {
+        console.log("Course found");
+        } else {
+        console.log("Course not found");
+        }
+        
+
+        let array=[1,2,3,[4,5,6],[7,8,9]];
+        let result=array.flat();
+        console.log(result);
+
+        let array1=[1,2,3,[4,5,6],[7,8,9]];
+        console.log(array1[3]);
+        console.log(array1[4]);
+
+
+
+
+    </script>
+</body>
+</html>
